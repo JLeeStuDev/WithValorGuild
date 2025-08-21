@@ -1,1 +1,1 @@
-# WithValorGuild
+This is a production‑grade, résumé‑ready starter for my World of Warcraft guild website. It’s a pnpm + Turborepo monorepo with Next.js (App Router), TypeScript, Prisma + PostgreSQL, tRPC, Tailwind + shadcn/ui, Redis + BullMQ worker, Meilisearch, Docker Compose for local services, and GitHub Actions CI.
