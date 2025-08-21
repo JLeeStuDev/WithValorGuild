@@ -1,0 +1,21 @@
+{
+    "compilerOptions": 
+    {
+        "target": "ES2020",
+        "lib": ["ES2020", "DOM"],
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "baseUrl": ".",
+        "paths": 
+        {
+            "@api/*": ["packages/api/src/*"],
+            "@db/*": ["packages/db/src/*"],
+            "@ui/*": ["packages/ui/src/*"],
+            "@utils/*": ["packages/utils/src/*"]
+        }
+    }
+}
