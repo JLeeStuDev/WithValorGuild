@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": 
+    [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Next.js (web)",
+            "program": "${workspaceFolder}/apps/web/node_modules/.bin/next",
+            "args": ["dev"],
+            "cwd": "${workspaceFolder}/apps/web",
+            "console": "integratedTerminal"
+        },
+        
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Worker",
+            "program": "${workspaceFolder}/apps/worker/node_modules/.bin/ts-node",
+            "args": ["src/index.ts"],
+            "cwd": "${workspaceFolder}/apps/worker",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

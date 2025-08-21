@@ -1,0 +1,12 @@
+{
+    "recommendations": 
+    [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "Prisma.prisma",
+        "bradlc.vscode-tailwindcss",
+        "mhutchie.git-graph",
+        "ms-azuretools.vscode-docker",
+        "Gruntfuggly.todo-tree"
+    ]
+}
