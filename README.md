@@ -6,25 +6,12 @@ Prerequisites:
 - pnpm
 - Docker Desktop or compatible
 
-Repo Structure:
-.
-├─ apps/
-│ ├─ web/ # Next.js 14 app (SSR/ISR)
-│ └─ worker/ # BullMQ worker for jobs/webhooks/syncs
-├─ packages/
-│ ├─ api/ # tRPC routers (server-side)
-│ ├─ db/ # Prisma schema & client
-│ ├─ ui/ # Shared UI (shadcn components)
-│ └─ utils/ # Shared types, zod schemas, helpers
-├─ infra/
-│ └─ docker/compose.yml# Postgres, Redis, Meilisearch, Mailhog
-├─ .github/workflows/ci.yml
-├─ .vscode/ # Editor settings & launch configs
-├─ turbo.json
-├─ package.json
-├─ pnpm-workspace.yaml
-├─ tsconfig.base.json
-├─ .eslintrc.cjs
-├─ .prettierrc
-├─ .env.example
-└─ README.md
+## Quickstart
+
+1. Copy `.env.example` → `.env` and fill values.
+2. Start services: `docker compose -f infra/docker/compose.yml up -d`
+3. Install deps: `pnpm install`
+4. Migrate DB: `pnpm db:migrate`
+5. Dev servers: `pnpm dev` (web + worker)
+
+Open http://localhost:3000
