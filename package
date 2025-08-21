@@ -1,0 +1,25 @@
+{
+    "name": "with-valor-guild",
+    "private": true,
+    "packageManager": "pnpm@9",
+    "scripts":
+    {
+        "build": "turbo run build",
+        "dev": "turbo run dev --parallel",
+        "lint": "turbo run lint",
+        "test": "turbo run test",
+        "format": "prettier -w .",
+        "typecheck": "turbo run typecheck",
+        "db:migrate": "pnpm -C packages/db prisma migrate dev",
+        "db:deploy": "pnpm -C packages/db prisma migrate deploy",
+        "db:studio": "pnpm -C packages/db prisma studio"
+    },
+    "devDependencies": 
+    {
+    "@types/node": "^20.14.11",
+    "eslint": "^9.9.0",
+    "prettier": "^3.2.5",
+    "turbo": "^2.0.6",
+    "typescript": "^5.5.4"
+    }
+}
