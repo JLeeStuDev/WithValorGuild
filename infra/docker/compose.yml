@@ -1,0 +1,24 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres:16
+  environment:
+    POSTGRES_PASSWORD: postgres
+    POSTGRES_USER: postgres
+    POSTGRES_DB: wowguild
+  ports: ['5432:5432']
+  volumes:
+    - pgdata:/var/lib/postgresql/data
+redis:
+  image: redis:7
+  ports: ['6379:6379']
+meilisearch:
+  image: getmeili/meilisearch:v1.9
+  environment:
+    MEILI_MASTER_KEY: ${MEILI_MASTER_KEY:-masterKey}
+  ports: ['7700:7700']
+mailhog:
+  image: mailhog/mailhog
+  ports: ['8025:8025']
+volumes:
+  pgdata:
