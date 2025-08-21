@@ -1,0 +1,22 @@
+{
+    "name": "@guild/db",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": 
+    {
+        "prisma": "prisma",
+        "build": "tsc -p tsconfig.json",
+        "typecheck": "tsc -p tsconfig.json"
+    },
+    
+    "dependencies": 
+    {
+        "@prisma/client": "^5.16.1"
+    },
+    
+    "devDependencies": 
+    {
+        "prisma": "^5.16.1",
+        "typescript": "^5.5.4"
+    }
+}
